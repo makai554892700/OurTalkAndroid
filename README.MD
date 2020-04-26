@@ -1,4 +1,5 @@
 ### OurTalk Android 客户端代码
+# 服务器端[参考](https://github.com/makai554892700/OurTalk.git)
 # 通讯核心使用[netty](https://netty.io/)
 # 聊天气泡效果[参考](https://www.cnblogs.com/shiwei-bai/p/4913973.html)
     * 去[阿里巴巴矢量图标网站](https://www.iconfont.cn/) 搜索气泡 获取想要的图片，下载png文件，网站可以选择颜色和大小。气泡的方向则可以直接使用工具翻转。
@@ -14,6 +15,8 @@
                 android:background="@drawable/ic_talk_left"
                 android:text="@string/app_name"/>
 
+
+# 下载好代码后全局搜索 www.demo.com 改成自己服务器的域名或者ip进行测试
 
 
 
