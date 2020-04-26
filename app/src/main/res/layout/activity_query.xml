@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/query_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_60dp">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/size_10dp"
+            android:paddingEnd="@dimen/size_10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/blue_1" />
+
+        <EditText
+            android:id="@+id/query"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:layout_marginBottom="@dimen/size_15dp"
+            android:layout_toStartOf="@id/cancel"
+            android:background="@drawable/white_back_4"
+            android:gravity="center_vertical"
+            android:hint="@string/query"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:inputType="text"
+            android:paddingStart="@dimen/size_40dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="@dimen/size_60dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/ic_query_gray" />
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="@dimen/size_60dp"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/cancel"
+            android:scaleType="center"
+            android:src="@drawable/ic_close"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/query_parent" />
+
+    <include
+        layout="@layout/common_loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

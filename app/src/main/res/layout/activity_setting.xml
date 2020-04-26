@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/item_user_profile"
+                layout="@layout/item_user_profile" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_user_profile" />
+
+            <View
+                android:id="@+id/line_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_10dp"
+                android:layout_below="@id/recycler_view"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/change_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_60dp"
+                android:layout_below="@id/line_1"
+                android:gravity="center"
+                android:text="@string/change_account"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_15sp" />
+
+            <View
+                android:id="@+id/line_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_10dp"
+                android:layout_below="@id/change_account"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_60dp"
+                android:layout_below="@id/line_2"
+                android:gravity="center"
+                android:text="@string/logout"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_15sp" />
+
+            <View
+                android:id="@+id/line_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_10dp"
+                android:layout_below="@id/logout"
+                android:background="@color/gray" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include
+        layout="@layout/common_loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

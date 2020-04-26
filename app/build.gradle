@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    buildToolsVersion rootProject.buildToolsVersion
+    compileSdkVersion rootProject.compileSdkVersion
+    defaultConfig {
+        applicationId "www.mys.com.ourtalkandroid"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.sdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            //开启代码混淆
+            minifyEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            //开启代码混淆
+            minifyEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.mayousheng.www:basepojo:0.1.1'
+    implementation 'com.mayousheng.www:initview:0.0.2'
+    implementation "com.mayousheng.www:httputils:0.0.8"
+    implementation 'com.google.android.material:material:1.2.0-alpha06'
+    implementation 'com.ashokvarma.android:bottom-navigation-bar:2.2.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+    implementation 'io.netty:netty-all:4.1.48.Final'
+}

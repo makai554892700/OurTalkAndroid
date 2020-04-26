@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/new_fiend_parent"
+            layout="@layout/item_contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size__1dp" />
+
+        <include
+            android:id="@+id/group_parent"
+            layout="@layout/item_contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_fiend_parent"
+            android:layout_marginBottom="@dimen/size__1dp" />
+
+        <include
+            android:id="@+id/flag_parent"
+            layout="@layout/item_contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/group_parent"
+            android:layout_marginBottom="@dimen/size__1dp" />
+
+        <include
+            android:id="@+id/public_account_parent"
+            layout="@layout/item_contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flag_parent"
+            android:layout_marginBottom="@dimen/size__1dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/public_account_parent"
+            android:nestedScrollingEnabled="false" />
+    </RelativeLayout>
+
+</ScrollView>

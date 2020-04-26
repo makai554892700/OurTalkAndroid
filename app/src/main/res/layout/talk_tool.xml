@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/talk_tool"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1dp"
+                android:background="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/talk_text_type_parent"
+                android:layout_width="@dimen/size_30dp"
+                android:layout_height="@dimen/size_60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/size_10dp">
+
+                <ImageView
+                    android:id="@+id/talk_text_type"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/talk_right"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/talk_send"
+                    android:layout_width="@dimen/size_60dp"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="@dimen/size_5dp"
+                    android:gravity="center"
+                    android:text="@string/send"
+                    android:textSize="@dimen/size_15sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/talk_add"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/size_10dp"
+                    android:layout_marginEnd="@dimen/size_10dp"
+                    android:padding="@dimen/size_5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_add" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/talk_face_parent"
+                android:layout_width="@dimen/size_30dp"
+                android:layout_height="@dimen/size_60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@id/talk_right">
+
+                <ImageView
+                    android:id="@+id/talk_face"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_face" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/talk_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_10dp"
+                android:layout_toStartOf="@id/talk_face_parent"
+                android:layout_toEndOf="@id/talk_text_type_parent"
+                android:gravity="start|center"
+                android:maxHeight="@dimen/size_100dp"
+                android:maxLines="3"
+                android:padding="@dimen/size_5dp"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/talk_voice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/talk_face_parent"
+                android:layout_toEndOf="@id/talk_text_type_parent"
+                android:background="@color/transparent"
+                android:gravity="start|center"
+                android:maxHeight="@dimen/size_100dp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

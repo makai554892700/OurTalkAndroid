@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">OurTalkAndroid</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="input_user_name">输入用户名</string>
+    <string name="input_pass">输入密码</string>
+    <string name="edit_empty">内容不能为空</string>
+    <string name="edit_len_error">输入的内容长度需大于%1d且小于%2d</string>
+
+    <string name="talks">对话</string>
+    <string name="contacts">通讯录</string>
+    <string name="find">发现</string>
+    <string name="mine">我的</string>
+
+    <string name="demo_title">测试标题</string>
+    <string name="demo_desc">测试内容</string>
+    <string name="demo_time">下午11:14</string>
+    <string name="send">发送</string>
+
+    <string name="item_new_friend">新的朋友</string>
+    <string name="item_group">群聊</string>
+    <string name="item_flag">标签</string>
+    <string name="item_public_account">公众号</string>
+    <string name="item_moments">朋友圈</string>
+    <string name="item_scan">扫一扫</string>
+    <string name="item_shake">摇一摇</string>
+    <string name="item_look">看一看</string>
+    <string name="item_search">搜一搜</string>
+    <string name="item_around">附近的人</string>
+    <string name="item_buy">购物</string>
+    <string name="item_game">游戏</string>
+    <string name="item_lite_app">小程序</string>
+    <string name="item_pay">支付</string>
+    <string name="item_collect">收藏</string>
+    <string name="item_picture">相册</string>
+    <string name="item_card">卡包</string>
+    <string name="item_face">表情</string>
+    <string name="item_settings">设置</string>
+
+    <string name="change_account">切换账号</string>
+    <string name="logout">退出</string>
+    <string name="sure">确认</string>
+    <string name="cancel">取消</string>
+    <string name="query">搜索</string>
+
+    <string name="no_such_user">没这个用户</string>
+    <string name="add_user">添加到通讯录</string>
+    <string name="send_message">发消息</string>
+    <string name="send_voice_video">音视频通话</string>
+    <string name="temp_1">昵称: 404 not found\n微信号: caifang199110805\n地区: 百慕大</string>
+    <string name="nick_name">昵称: %s</string>
+    <string name="user_name">账号: %s</string>
+    <string name="accept">接受</string>
+
+    <string name="request_notification">打开通知，即时收到消息通知。</string>
+    <string name="start_connect">尝试连接服务器中\.\.\.</string>
+    <string name="friend_request">您有新的好友请求</string>
+
+</resources>
